@@ -4,5 +4,5 @@ import java.sql.ResultSet;
 
 @FunctionalInterface
 public interface ResultHandler {
-    public void handleResult(ResultSet resultSet);
+    void handleResult(ResultSet resultSet);
 }
