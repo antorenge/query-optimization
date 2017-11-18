@@ -1,1 +1,7 @@
-There will be a normal readme here.
+# Test task
+
+## Testing the startup
+> mvn test
+
+## Running the local server
+> mvn exec:java
