@@ -25,11 +25,12 @@ public class AppTest {
     }
 
     private void testQuery() throws IOException {
-        final String testUrl = "http://localhost:12000/?tx_id=no_such_thing";
+        final String testUrl = "http://localhost:12000/?country=EE";
         final URLConnection con = new URL(testUrl).openConnection();
         final String someContent = new BufferedReader(
                 new InputStreamReader(con.getInputStream())
         ).lines().collect(Collectors.joining("\n"));
         assertThat(someContent).isNotEmpty();
+        System.out.println("DB Search Result " + someContent);
     }
 }
