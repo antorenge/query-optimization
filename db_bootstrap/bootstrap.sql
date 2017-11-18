@@ -303,11 +303,11 @@ INSERT INTO payments (
   msisdn,
   amount
 ) SELECT
-                (NOW() - (g*25 || ' seconds')::interval),
-                (NOW() - (g*25 || ' seconds')::interval),
+                (NOW() - (g*2 || ' seconds')::interval),
+                (NOW() - (g*2 || ' seconds')::interval),
                 (SELECT uuid FROM merchants WHERE id = 1+(g%933)),
                 (SELECT code FROM operators WHERE id = 1+(g%95)),
                 (SELECT code FROM countries WHERE id = 1+(g%211)),
                 '373' || lpad((g % 111111)::text, 6, '0'),
                 ((g % 1000) / 100.0)
-  FROM generate_series(1,25*1000*1000) g;
+  FROM generate_series(1,75*1000*1000) g;
