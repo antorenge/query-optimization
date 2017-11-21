@@ -31,3 +31,4 @@ CREATE TABLE
 
 ```
 
+**Note**: this will take some time
