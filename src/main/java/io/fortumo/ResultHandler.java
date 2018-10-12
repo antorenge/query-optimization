@@ -1,8 +1,6 @@
 package io.fortumo;
 
-import java.sql.ResultSet;
-
 @FunctionalInterface
 public interface ResultHandler {
-    void handleResult(ResultSet resultSet);
+    void handleResult(QueryResult queryResult);
 }
