@@ -25,7 +25,7 @@ public class SearchServlet extends HttpServlet {
         final String country = req.getParameter("country");
         final String operator = req.getParameter("operator");
 
-        final String searchResult = this.searchEngine.search(merchant,msisdn,country, operator);
+        final String searchResult = this.searchEngine.search(merchant, msisdn, country, operator);
 
         if (searchResult != null) {
             resp.setContentLength(searchResult.getBytes().length);
