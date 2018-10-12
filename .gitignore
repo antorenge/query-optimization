@@ -1,4 +1,22 @@
+# IDE files
 .idea
+.vscode
+.settings
+
 out
 target
 ms-dev-test-task.iml
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse project files
+.classpath
+.project
