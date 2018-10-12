@@ -9,6 +9,7 @@ ms-dev-test-task.iml
 
 # Compiled class file
 *.class
+*.jar
 
 # Log file
 *.log
