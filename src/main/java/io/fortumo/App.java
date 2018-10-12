@@ -26,6 +26,7 @@ public class App {
         this.server = new Server(PORT);
         final ServletHandler handler = new ServletHandler();
         server.setHandler(handler);
+        handler.addServletWithMapping(ReportServlet.class, "/report/*");
         handler.addServletWithMapping(SearchServlet.class, "/*");
 
         // Start things up!
